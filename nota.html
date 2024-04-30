@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nota </title>
+    <link rel="stylesheet" href="https://www.gundalingprint.com/liteprint/assets/plugins/bootstrap/bootstrap.min.css"
+        type="text/css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://max.printsoft.co.id/liteprint/application/liteprint/max/assets/plugins/az_theme/az_theme.css?v3.2">
+    <link rel="stylesheet"
+        href="https://max.printsoft.co.id/liteprint/application/liteprint/max/assets/plugins/az_theme/az_theme_liteprint.css?v3.2"
+        type="text/css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://max.printsoft.co.id/liteprint/assets/plugins/az-core/az-core-all.css?v2.4">
+    <link rel="stylesheet"
+        href="https://www.gundalingprint.com/liteprint/assets/plugins/timeline/jquery.roadmap.min.css"
+        type="text/css" />
+    <link rel="stylesheet"
+        href="https://www.gundalingprint.com/liteprint/assets/plugins/fontawesome/fontawesome-all.css"
+        type="text/css" />
+    <style type="text/css">
+        body {
+            /*width: 100%;*/
+            font-size: 14px;
+            font-family: 'Verdana';
+        }
+
+        .tabel-label tr td {
+            vertical-align: top;
+        }
+
+        .container-nota {
+            position: relative;
+            margin-top: 50px;
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+
+        .separate {
+            border-top: 1px solid #000;
+        }
+
+        .txt-title {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .tabel-nota {
+            width: 100%;
+            margin-top: 15px;
+        }
+
+        .tabel-nota tr td {
+            vertical-align: top;
+        }
+
+        .txt-terima-kasih {
+            margin-top: 30px;
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .container-kode-order {
+            margin-top: 25px;
+        }
+
+        .icon-gunting img {
+            width: 20px;
+            position: absolute;
+            top: -7px;
+        }
+
+        .separate-gunting {
+            margin-left: 20px;
+        }
+
+        .logo-nota img {
+            height: 40px;
+        }
+
+        .event__date {
+            font-size: 24;
+            font-weight: bold;
+        }
+
+        .btn-nota {
+            color: #FFF;
+            width: 50%;
+            padding: 12px 12px;
+            text-align: center;
+            border: none;
+            font-size: 14;
+        }
+
+        .btn-progress {
+            color: #FFF;
+            width: 50%;
+            padding: 12px 12px;
+            text-align: center;
+            border: none;
+            font-size: 14;
+        }
+
+        .content-progress {
+            display: none;
+        }
+
+        .floating-btn {
+            background-color: #6acbfc;
+            position: fixed;
+            right: 32px;
+            bottom: 32px;
+            padding: 24px;
+            border-radius: 50%;
+        }
+
+        .floating-btn i {
+            color: #FFF;
+        }
+
+        @media print {
+            .container-btn {
+                display: none !important;
+            }
+
+            .content-progress {
+                display: none !important;
+            }
+
+            .floating-btn {
+                display: none !important;
+            }
+
+            .content-nota {
+                display: block !important;
+            }
+        }
+
+        .btn-page {
+            background-color: #cfcfcf;
+            color: #333;
+        }
+
+        .btn-page.active {
+            background-color: #6acbfc;
+            color: #FFF;
+        }
+
+        .qrcode-wrapper {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-btn" style="display: flex;">
+        <button class="btn-page btn-nota active">Nota</button>
+        <button class="btn-page btn-progress">Status Order</button>
+    </div>
+    <div class="container-nota">
+        <div class="content-nota">
+            <div class="txt-title">
+                www.gundalingprint.com
+            </div>
+            <div class="qrcode-wrapper">
+                <div class="qrcode">
+                    <img style="width: 200px; height: 200px;"
+                        src="Gundaling.jpg">
+                </div>
+            </div>
+            <div class="container-kode-order">
+                <table width="100%">
+                    <tr>
+                        <td width="100px">Kode Order</td>
+                        <td width="15px">:</td>
+                        <td>SLI202404270089</td>
+                        <td align="right">29-04-2024 19:39</td>
+                    </tr>
+                    <tr>
+                        <td>Kepada</td>
+                        <td>:</td>
+                        <td colspan="2">ARDANA</td>
+                    </tr>
+                    <tr>
+                        <td>Kasir</td>
+                        <td>:</td>
+                        <td colspan="2">silvia julianti</td>
+                    </tr>
+                </table>
+            </div>
+            <table class="table table-bordered table-condensed tabel-nota">
+                <tr>
+                    <td width="50%">Produk</td>
+                    <td>Harga</td>
+                    <td>Qty</td>
+                    <td>Total</td>
+                </tr>
+
+                <tr>
+                    <td>Brosur A5 Art Paper 120</td>
+                    <td align="right" width="120px">
+                        500.000 </td>
+                    <td align="right" width="100px">2</td>
+                    <td align="right" width="140px">
+                        1.000.000
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="4">
+                        - Dua Sisi<br> </td>
+                </tr>
+
+
+                <tr>
+                    <td colspan="3" align="right">
+                        Total
+                    </td>
+                    <td align="right">
+                        1.000.000 </td>
+                </tr>
+                <tr>
+                    <td colspan="3" align="right">Bayar </td>
+                    <td align="right">1.000.000</td>
+                </tr>
+                <tr>
+                    <td colspan="3" align="right">Kembali :</td>
+                    <td align="right"></td>
+                </tr>
+            </table>
+            <div class="txt-terima-kasih">
+                TERIMA KASIH
+                <br>
+                Silakan Order Online: www.gundalingprint.com <br>
+                "Jam Operasional Khusus Web Senin-Jumat:07-22.00WIB Weekend:08-20.00WIB"
+            </div>
+        </div>
+        <div class="content-progress">
+            <h3>Status Order</h3>
+            <div class="loh-step">
+                <div class="loh-step-list ">
+                    VERIFIKASI PEMBAYARAN </div>
+                <div class="loh-step-arrow">
+                    <i class="fa fa-chevron-right"></i>
+                </div>
+                <div class="loh-step-list ">
+                    PROSES PRODUKSI </div>
+                <div class="loh-step-arrow">
+                    <i class="fa fa-chevron-right"></i>
+                </div>
+                <div class="loh-step-list">
+                    PESANAN DIKIRIM </div>
+                <div class="loh-step-arrow">
+                    <i class="fa fa-chevron-right"></i>
+                </div>
+                <div class="loh-step-list">
+                    PESANAN SUDAH DITERIMA </div>
+                <div class="loh-step-arrow">
+                    <i class="fa fa-chevron-right"></i>
+                </div>
+            </div>
+        </div>
+        <div class="content-progress" style="margin-top: 70px;">
+            <h3>Detail Produk</h3>
+            <div style="margin-top: 15px;">
+                <p>Brosur A5 Art Paper 120</p>
+            </div>
+            <div class="loh-step">
+                <div class="loh-step-list ">
+                    BELUM DIPRODUKSI </div>
+                <div class="loh-step-arrow">
+                    <i class="fa fa-chevron-right"></i>
+                </div>
+                <div class="loh-step-list ">
+                    PROSES PRODUKSI </div>
+                <div class="loh-step-arrow">
+                    <i class="fa fa-chevron-right"></i>
+                </div>
+                <div class="loh-step-list">
+                    SELESAI DIPRODUKSI </div>
+                <div class="loh-step-arrow">
+                    <i class="fa fa-chevron-right"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="floating-btn">
+        <i class="fa fa-print fa-lg text-white"></i>
+    </div>
+</body>
+<script src="https://www.gundalingprint.com/liteprint/assets/plugins/jquery/jquery.min.js"></script>
+<script src="https://www.gundalingprint.com/liteprint/assets/plugins/timeline/jquery.roadmap.min.js"></script>
+<script type="text/javascript">
+    var data = [{
+            date: "VERIFIKASI PEMBAYARAN",
+            content: "<label class='label label-success'>Selesai Dikerjakan</label>"
+        },
+        {
+            date: "PROSES PRODUKSI",
+            content: "<label class='label label-warning'>Sedang Dalam Proses</label>"
+        },
+        {
+            date: "<span style='color:#999'>PESANAN DIKIRIM</span>",
+            content: ""
+        },
+        {
+            date: "<span style='color:#999'>PESANAN SUDAH DITERIMA</span>",
+            content: ""
+        },
+    ];
+    $("#my-roadmap").roadmap(data, {
+        eventsPerSlide: 6,
+        slide: 1,
+        rootClass: 'roadmap',
+        prevArrow: 'prev',
+        nextArrow: 'next',
+        orientation: 'vertical',
+        onBuild: function () {
+            console.log('on build event');
+        },
+    });
+
+    $('body').on('click', '.btn-nota', function () {
+        $('.content-nota').show();
+        $('.content-progress').hide();
+    });
+
+    $('body').on('click', '.btn-progress', function () {
+        $('.content-progress').show();
+        $('.content-nota').hide();
+    });
+    $('body').on('click', '.floating-btn', function () {
+        window.print();
+    });
+    $('body').on('click', '.btn-page', function () {
+        $('.btn-page').removeClass('active');
+        $(this).addClass('active');
+    });
+</script>
+
+</html>
